@@ -1,42 +1,96 @@
 body {
-    background-color: rgb(32, 32, 32);
-    font-family: 'Inter', sans-serif;
-    color: white;
+  background-color: rgb(32, 32, 32);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
+/* contenedor principal */
+.container {
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* logo */
 #logo {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  font-size: 80px;
-  margin: 30px 0px;
+  font-size: 72px;
+  margin: 0 0 10px 0;
 }
 
-.container {
-    max-width: 500px;
-    margin: 0 auto;
+#logo span {
+  color: rgb(29, 132, 209);
 }
 
-#logo > span {
-    color: rgb(29, 132, 209);
-    
-}
-
+/* titulo principal */
 h1 {
-    color: #87b8ec;
+  color: #72a5db;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
 
+/* subtitulo */
+h4 {
+  font-weight: 400;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+}
+
+/* párrafos */
+p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* redes */
+.redes {
+  margin-top: 25px;
 }
 
 .redes i {
-  font-size: 38px;
+  font-size: 34px;
   color: white;
-  margin: 10px;
+  margin: 12px;
   transition: 0.3s;
 }
 
 .redes i:hover {
-  color: #87b8ec;
+  color: #60A5FA;
+  transform: translateY(-3px);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+  #logo {
+    font-size: 46px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .redes i {
+    font-size: 30px;
+  }
+
 }
